@@ -1,0 +1,41 @@
+.summary {
+  grid-area: 11 / 1 / span 16 / span 13;
+  background: linear-gradient(180deg, var(--negative), var(--lightGradient));
+  padding: var(--spaceXL);
+  border-radius: var(--roundLG);
+  box-shadow: var(--shadow);
+  transform: translateY(1000px);
+  animation: slide-up 1s ease-out .9s forwards;
+
+  h1 {
+    color: var(--text);
+    font-weight: var(--light);
+  }
+
+  header h1 {
+    font-size: var(--lg);
+  }
+
+  .account-number, .transactions-limit {
+    background-color: var(--negative);
+    border-radius: var(--roundSM);
+    box-shadow: var(--shadow);
+    padding: var(--spaceLG);
+    margin-top: var(--spaceMD);
+
+    h1, h2 {
+      font-size: var(--md);
+    }
+
+    &:hover {
+      transform: scale(1.01);
+      box-shadow: var(--shadowHover);
+    }
+  }
+
+  @keyframes slide-up {
+    to {
+      transform: translateY(0);
+    }
+  }
+}

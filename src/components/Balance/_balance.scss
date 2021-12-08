@@ -1,0 +1,55 @@
+.balance {
+  grid-area: 1 / 1 / span 9 / span 13;
+  background: linear-gradient(90deg, var(--primary), var(--darkGradient));
+  padding: var(--spaceXL);
+  border-radius: var(--roundLG);
+  animation: slide-right 1s ease-out .1s forwards;
+  transform: translateX(-1000px);
+
+  h1, h2 {
+    color: var(--negative);
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spaceLG);
+
+    .date h1 {
+      font-size: var(--lg);
+      font-weight: var(--light);
+    }
+
+    .date h2 {
+      font-size: var(--md);
+      font-weight: var(--thin);
+    }
+
+    .percentage svg {
+      margin-left: var(--spaceXS);
+    }
+  }
+
+  footer {
+    span:first-child {
+      font-size: var(--lg);
+    }
+
+    span:last-child {
+      font-size: var(--xl);
+    }
+  }
+
+  &:hover {
+    background: linear-gradient(270deg, var(--primary), var(--darkGradient));
+  }
+
+  @keyframes slide-right {
+    to {
+      transform: translateX(0);
+    }
+  }
+
+
+}

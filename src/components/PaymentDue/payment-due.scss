@@ -1,0 +1,30 @@
+.payment-due {
+  grid-area: 1 / 15 / span 5 / span 10;
+  background: linear-gradient(180deg, var(--negative), var(--lightGradient));
+  border-radius: var(--roundMD);
+  box-shadow: var(--shadow);
+  padding: var(--spaceLG);
+  transform: translateY(-1000px);
+  animation: slide-down 1s ease-out .3s forwards;
+
+  h1 {
+    color: var(--secondary);
+    font-size: var(--md);
+    margin-bottom: var(--spaceXS);
+  }
+
+  h2 {
+    font-weight: var(--light);
+  }
+
+  &:hover {
+    transform: scale(1.01);
+    box-shadow: var(--shadowHover);
+  }
+
+  @keyframes slide-down {
+    to {
+      transform: translateY(0);
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.wrapper {
+  width: 1152px;
+  height: 1248px;
+  display: grid;
+  grid: repeat(26, 1fr) / repeat(24, 1fr);
+  margin: var(--spaceMD) auto;
+
+  * {
+    transition: .2s all ease-out;
+  }
+}
