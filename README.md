@@ -1,4 +1,4 @@
-# design-demo
+# Design Demo using React, webpack, Babel, and SCSS.
 
 ## Click [here](https://react-design-app.netlify.app/) to view the app.
 
